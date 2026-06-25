@@ -1,0 +1,21 @@
+[toolchain]
+package_manager = "yarn"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+bigshort = "GZ87THAUf9rWVyoLmVUR2DDYtaNr9fzvEkwxFurERrE8"
+
+[programs.devnet]
+bigshort = "GZ87THAUf9rWVyoLmVUR2DDYtaNr9fzvEkwxFurERrE8"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "cargo test"
+
+[hooks]

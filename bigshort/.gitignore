@@ -1,0 +1,18 @@
+.anchor
+.DS_Store
+target
+**/*.rs.bk
+node_modules
+test-ledger
+.yarn
+.surfpool*
+*.md
+.idl-check
+
+# Next.js app build artifacts
+.next
+next-env.d.ts
+.env.local
+
+# Generated run artifact — contains a position keypair (positionSecret)
+surf/devnet.json

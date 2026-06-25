@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --background: #070809;
+  --foreground: #ededed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-playfair);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [class*="animate-"] { animation: none; }
+}
+
+.wallet-adapter-button-trigger {
+  background: #9aa8f0 !important;
+  color: #14152b !important;
+  border-radius: 9999px !important;
+  height: auto !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 13px !important;
+  font-family: var(--font-sans) !important;
+  font-weight: 500 !important;
+}
+.wallet-adapter-button-trigger:hover {
+  background: #aeb9f4 !important;
+}
